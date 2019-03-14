@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width : 100%;
+  height:100%;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+   body {
+       width:100%;
+       font-size: 1.25em;
+   }
+
+    .show-tooltip {
+        width: 12em;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        margin-left: -140px;
+    }
+    .order-summary-text {
+        border: 1px solid silver;
+        margin-right: 3px;
+    }
+    .order-summary-grand-total {
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen  and (min-device-width : 668px) and (max-width: 768px) {
+    body {
+        width:100%;
+        font-size: 2.00em;
+    }
+    .show-tooltip {
+        width: 12em;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        margin-left: -60px;
+        height: auto;
+    }
+    .order-summary-text {
+        border: 1px solid silver;
+        margin-right: 3px;
+        width: 50%;
+    }
+    .order-summary-grand-total {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.00em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+   body {
+      width:50%;
+   }
+    .show-tooltip {
+        width: 15em;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        margin-left: -60px;
+    }
+    .order-summary-grand-total {
+        margin-top: 10px;
+        font-weight: 900;
+        font-size: 0.75em;
+    }
+    .order-summary-text {
+        border: 1px solid silver;
+        margin-right: 3px;
+    }
+}
